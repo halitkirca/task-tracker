@@ -10,7 +10,7 @@ const GorevEkle = ({ setTasks, tasks }) => {
 
     setTasks([
       ...tasks, {
-        id: tasks ? tasks[tasks.length - 1].id + 1 : 1,
+        id: tasks.length > 0 ? tasks[tasks.length - 1].id + 1 : 1,
         text: taskName,
         day: date,
         bitti: false,
