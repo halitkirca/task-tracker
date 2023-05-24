@@ -25,6 +25,7 @@ const GorevleriGoster = ({ tasks, setTasks }) => {
         return (
           <div
             className={bitti ? "gorev done" : "gorev"}
+            onDoubleClick={() => setTasks(tasks.map((a) => a.id === id ? {...a, bitti:!bitti}:a))}
             key={id}
           >
             <h3>
