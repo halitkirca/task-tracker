@@ -3,7 +3,7 @@ import { FaTimesCircle } from "react-icons/fa";
 //!https://react-icons.github.io/react-icons
 const GorevleriGoster = ({ tasks, setTasks }) => {
   const deleteTask = (id) => {
-    const newtasks = tasks.filter((item) => item.id != id);
+    const newtasks = tasks.filter((item) => item.id !== id);
     setTasks(newtasks);
     console.log(tasks);
   };
@@ -25,7 +25,6 @@ const GorevleriGoster = ({ tasks, setTasks }) => {
         return (
           <div
             className={bitti ? "gorev done" : "gorev"}
-            // onClick={() => statusChange(id)}
             key={id}
           >
             <h3>
